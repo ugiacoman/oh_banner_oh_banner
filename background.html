@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+    chrome.browserAction.onClicked.addListener(
+        function(tab) {
+          chrome.tabs.executeScript(null,{code:"document.body.bgColor='yellow'"});
+        }
+      );
+    </script>
+  </head>
+</html>
