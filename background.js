@@ -13,15 +13,15 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 });
 
 
-chrome.browserAction.tab.addListener(function (url)){
-    chrome.storage.sync.get(function (items) {
-        if (isBanner(url)) {
-            console.log("LETS GOOOOO");
-        }
-            // chrome.tabs.executeScript({ file: "script.js" }, function () {
-            });
-    });
-});
+// chrome.browserAction.tab.addListener(function (url)){
+//     chrome.storage.sync.get(function (items) {
+//         if (isBanner(url)) {
+//             console.log("LETS GOOOOO");
+//         }
+//             // chrome.tabs.executeScript({ file: "script.js" }, function () {
+//             });
+//     });
+// });
 
 function isBanner(url) {
     // regex based on https://stackoverflow.com/a/32730577
